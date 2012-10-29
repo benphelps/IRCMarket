@@ -1,12 +1,12 @@
 class BuyLong
-	include Cinch::Plugin
-	
-	@prefix = /^./
+  include Cinch::Plugin
+  
+  @prefix = /^./
 
-	match "hello"
+  match "hello"
 
-	def execute(m)
-		m.reply "Hello, #{m.user.nick}"
-	end
-	
+  def execute(m)
+    m.reply "Hello, #{m.user.nick}"
+  end
+  
 end
